@@ -94,6 +94,7 @@
 }
 .lower-message {
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .mes-content{
   font-size: 14px;
@@ -110,6 +111,7 @@
 .form-input{
   background-color: white;
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .form-message{
