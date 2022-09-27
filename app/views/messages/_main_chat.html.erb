@@ -7,36 +7,7 @@
   </div>
 </div>
 <div class="main-body">
-  <div class="message">
-    <div class="mes-title">
-      <div class="mes-name">
-        <a>Tom</a>
-      </div>
-      <div class="mes-date">
-        <a>2021/6/10 11:59:11</a>
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="mes-content">
-        <a>おはよう</a>
-      </div>
-    </div>
-  </div>
-  <div class="message">
-    <div class="mes-title">
-      <div class="mes-name">
-        <a>Sim</a>
-      </div>
-      <div class="mes-date">
-        <a>2021/6/10 12:39:11</a>
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="mes-content">
-        <a>hello</a>
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form-input">
